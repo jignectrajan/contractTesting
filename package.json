@@ -1,0 +1,22 @@
+{
+  "name": "pfct",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish:pact": "pact-cli publish pact/pacts --consumer-app-version=$(git rev-parse HEAD) --branch $(git rev-parse --abbrev-ref HEAD)"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@pact-foundation/pact": "^13.2.0",
+    "@pact-foundation/pact-cli": "^16.0.4",
+    "@pact-foundation/pact-node": "^10.18.0",
+    "chai": "^5.1.2",
+    "express": "^4.21.2",
+    "mocha": "^11.0.1"
+  }
+}
